@@ -281,3 +281,26 @@
     60% { transform: rotate(0.0deg); }
     100% { transform: rotate(0.0deg); }
   }
+
+  #video-slider > .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%; /* Show 2 cards per row on desktop */
+  }
+  
+  @media (max-width: 768px) {
+    #video-slider > .col-md-6 {
+      width: 100%; /* Show only 1 card at a time on mobile */
+    }
+  }
+
+  .about-description{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .about-description {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
